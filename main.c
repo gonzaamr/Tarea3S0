@@ -372,7 +372,6 @@ void *hilo_eliminador(void *arg) {
 void *hilo_accesos(void *arg) {
     sleep(30);
     while (!simulacion_terminada) {
-        ;
         acceder_direccion_virtual();
         pthread_mutex_lock(&mutex_mem);
         imprimir_mapa_memoria();
